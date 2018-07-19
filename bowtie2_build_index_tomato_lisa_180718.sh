@@ -12,7 +12,8 @@ module load bowtie/2.2.4
 cp "${HOME}"/genomes/S_lycopersicum_chromosomes.3.00.fa "${TMPDIR}"/
 
 #build index from the reference genome
-bowtie2-build S_lycopersicum_chromosomes.3.00.fa tomato_inx
+bowtie2-build petunia_genome tomato_inx
+
 # bowtie-build [reference fasta] [base name for index file]
 
 mv "${TMPDIR}"/* "${HOME}"/genomes/
